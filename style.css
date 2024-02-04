@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --light-blue: #f3f5fc;
+  --dark-blue: #0a3871;
+}
+
+* {
+  font-family: var(--font-inter);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--light-blue);
+}
+
+header {
+  display: flex;
+  padding: 1% 5% 0;
+  align-items: center;
+  height: 10%;
+}
+
+.main_content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+}
+
+.input_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+#phrase {
+  width: 80%;
+  height: 20%;
+  padding: 24px;
+  margin-top: 10%;
+  border: none;
+  font-size: 32px;
+  text-align: left;
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  resize: none;
+  scrollbar-color: var(--dark-blue) var(--light-blue);
+}
+
+#phrase::placeholder {
+  color: var(--dark-blue);
+}
+
+.result_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  margin-right: 2%;
+  border-radius: 32px;
+  text-align: center;
+}
+
+.result_content > img,
+.texts {
+  width: 80%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.btn_encrypt {
+  padding: 24px;
+  border: none;
+  border-radius: 24px;
+  background-color: var(--dark-blue);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.btn_encrypt:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  border: #0a3871 1px solid;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn_decrypt {
+  padding: 24px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 24px;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  font-size: 16px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.btn_decrypt:hover {
+  background-color: var(--dark-blue);
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#btn_copy {
+  padding: 24px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 24px;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  font-size: 16px;
+  cursor: pointer;
+  width: 80%;
+}
+
+#btn_copy:hover {
+  background-color: var(--dark-blue);
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}

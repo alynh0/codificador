@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DesCripto</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" alt="Um a minúsculo como logo." />
+    </header>
+
+    <main>
+      <div class="main_content">
+        <div class="input_content">
+          <textarea
+            id="phrase"
+            cols="30"
+            rows="4"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <div class="buttons">
+            <button class="btn_encrypt" onclick="encryptText()">
+              Criptografar
+            </button>
+            <button class="btn_decrypt" onclick="decryptText()">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+        <div class="result_content">
+          <img src="assets/searching.png" alt="Pessoa com uma lupa" />
+          <div class="texts">
+            <h2 id="result_title">Nenhuma mensagem encontrada</h2>
+            <p id="result"></p>
+          </div>
+          <button id="btn_copy" onclick="copyText()">Copiar</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
