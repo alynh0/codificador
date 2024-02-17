@@ -1,15 +1,6 @@
 initialTexts();
 hideCopyButton();
 
-function verificarCampo() {
-  let inputValue = getInputValue();
-  if (inputValue === "") {
-    console.log("Campo vazio");
-  } else {
-    encryptText();
-  }
-}
-
 function getInputValue() {
   return document.getElementById("phrase").value;
 }
