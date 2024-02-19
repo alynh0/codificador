@@ -80,8 +80,15 @@ function decryptText() {
 
 function copyText() {
   let text = document.getElementById("result").innerText;
-  navigator.clipboard.writeText(text);
-  alert("Texto copiado!");
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      alert("Texto copiado para a área de transferência");
+    })
+    .catch((err) => {
+      console.error("Falha ao copiar texto: ", err);
+      alert("Falha ao copiar texto");
+    });
 }
 
 function hideCopyButton() {
